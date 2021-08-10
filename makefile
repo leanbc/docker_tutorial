@@ -6,5 +6,5 @@ python_from_docker:
 	docker run -i -w /$(CURRENT_DIR_NAME) \
 	-v `pwd`:/$(CURRENT_DIR_NAME) \
 	$(INTERPRETER_IMAGE_ID) \
-	/bin/bash -c "python say_hi.py"; \
+	/bin/bash -c "python say_version.py"; \
 	)
